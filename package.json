@@ -4,7 +4,7 @@
   "description": "Node.js/TypeScript MCP server for Atlassian Bitbucket. Enables AI systems (LLMs) to interact with workspaces, repositories, and pull requests via tools (list, get, comment, search). Connects AI directly to version control workflows through the standard MCP interface.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type": "commonjs",
+  "type": "commonjs",    
   "repository": {
     "type": "git",
     "url": "https://github.com/aashari/mcp-server-atlassian-bitbucket.git"
@@ -13,6 +13,8 @@
     "mcp-atlassian-bitbucket": "./dist/index.js"
   },
   "scripts": {
+    "start": "node bitbucket-mcp-http-wrapper.js",
+    "dev": "node bitbucket-mcp-http-wrapper.js",
     "build": "tsc",
     "clean": "rm -rf dist coverage",
     "prepare": "npm run build && node scripts/ensure-executable.js",
