@@ -1,0 +1,25 @@
+{
+  "name": "bitbucket-mcp-http-wrapper",
+  "version": "1.0.0",
+  "description": "HTTP wrapper for aashari/mcp-server-atlassian-bitbucket to enable Railway deployment and Manus integration",
+  "main": "bitbucket-mcp-http-wrapper.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node bitbucket-mcp-http-wrapper.js",
+    "dev": "node bitbucket-mcp-http-wrapper.js"
+  },
+  "keywords": [
+    "mcp",
+    "bitbucket",
+    "atlassian",
+    "http-wrapper"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@aashari/mcp-server-atlassian-bitbucket": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
